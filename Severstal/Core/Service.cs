@@ -21,7 +21,6 @@ namespace Severstal.Core
             _export = export;
         }
 
-
         public async Task startDataProcessing()
         {
             List<LoadReport> resultLoadReport = await _repository.GetTaskLoadReportAsync();
