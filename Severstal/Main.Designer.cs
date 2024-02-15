@@ -33,13 +33,13 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.Location = new System.Drawing.Point(224, 123);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 64);
             this.button1.TabIndex = 0;
             this.button1.Text = "Export Word";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Main
@@ -48,10 +48,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 362);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Main";
             this.Text = "Severstal";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
+
         }
 
         #endregion
